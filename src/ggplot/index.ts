@@ -247,11 +247,15 @@ function parseLimitOption(
   if (optionPairList.length !== 2) {
     return result;
   }
-  const min = src.slice(optionPairList[0].from, optionPairList[0].to);
-  const max = src.slice(optionPairList[1].from, optionPairList[1].to);
+  
+  const minStr = src.slice(optionPairList[0].from, optionPairList[0].to);
+  const maxStr = src.slice(optionPairList[1].from, optionPairList[1].to);
 
+  const min = parseFloat(minStr);
+  const max = parseFloat(maxStr);
+  
   return {
-    min: min ? parseFloat(min) : undefined,
-    max: max ? parseFloat(max) : undefined,
+    min: isNaN(min) ? undefined : min,
+    max: isNaN(max) ? undefined : max,
   };
 }
