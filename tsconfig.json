@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "strict": false,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "noUnusedLocals": false,    // Disables TS18048 (unused variable errors)
+    //   "forceConsistentCasingInFileNames": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "moduleResolution": "node",
+      "paths": {
+        "@/*": ["./src/*"]
+      },
+      "declaration": true,
+      "declarationDir": "./dist"
+    },
+    "include": ["src"]
+  }
