@@ -1,15 +1,16 @@
 {
   "name": "code2ggplot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": ["ggplot2", "visiualization"],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "using R ggplot2 syntax code to generate ggplot2 in JS",
+  "homepage": "https://github.com/superjcd/code2ggplot",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.14",
